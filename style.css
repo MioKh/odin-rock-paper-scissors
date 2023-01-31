@@ -1,0 +1,14 @@
+html,body{
+    margin:0;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181a1b;
+}
+p{
+    color: #d1d1d0;
+}
