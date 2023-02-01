@@ -5,9 +5,9 @@ for now this game will be only played in the GUI will be added later when I lear
 
 so the pseudo code i have in my mind is something like this 
 
-1 write a function that will generate a number between 1 and 3
+1 write a function that will generate a number between 1 and 3 ✓
 
-2 according to which number was generated change it to a string 
+2 according to which number was generated change it to a string ✓
 
 3 take a input from the player 
 
