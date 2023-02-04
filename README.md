@@ -9,11 +9,11 @@ so the pseudo code i have in my mind is something like this
 
 2 according to which number was generated change it to a string ✓
 
-3 take a input from the player 
+3 take a input from the player ✓
 
-4 change the input to lower case to make the input case insensetive
+4 change the input to lower case to make the input case insensetive ✓
 
-5 check if the player input is a valid input if not tell the player to give a valid input
+5 check if the player input is a valid input if not tell the player to give a valid input ✓
 
 6 write a new function of the actual game that would take two perameters ( the user input , and the computer random generated input)
 

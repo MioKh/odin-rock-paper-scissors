@@ -24,3 +24,31 @@ function getPlayerChoice() {
   }
   return userchoice
 }
+
+function oneRound (){
+ const computerChoice = computerChoice();
+ const userchoice = userchoice();
+
+  if (userChoice === "rock" && computerChoice === "paper") {
+    console.log("Paper beats rock. You lose.");
+    return "computer";
+  } else if (userChoice === "paper" && computerChoice === "rock") {
+    console.log("Paper beats rock. You win.");
+    return "user";
+  } else if (userChoice === "scissors" && computerChoice === "paper") {
+    console.log("Scissors beat paper. You win.");
+    return "user";
+  } else if (userChoice === "paper" && computerChoice === "scissors") {
+    console.log("Scissors beat paper. You lose.");
+    return "computer";
+  } else if (userChoice === "rock" && computerChoice === "scissors") {
+    console.log("Rock beats scissors. You win.");
+    return "user";
+  } else if (userChoice === "scissors" && computerChoice === "rock") {
+    console.log("Rock beats scissors. You lose.");
+    return "computer";
+  } else {
+    console.log("It's a draw.");
+    return "draw";
+  }
+}
