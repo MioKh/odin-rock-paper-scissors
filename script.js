@@ -18,16 +18,16 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
-  let userchoice = prompt("choose your weapon : rock , paper , scissors").toLowerCase();
-  while (userchoice !== "rock" && userchoice !== "paper" && userchoice !== "scissors") {
-    userchoice = prompt("invalid input: choose your weapon : rock , paper , scissors")
+  let userChoice = prompt("choose your weapon : rock , paper , scissors").toLowerCase();
+  while (userChoice !== "rock" && userChoice !== "paper" && userChoice !== "scissors") {
+    userChoice = prompt("invalid input: choose your weapon : rock , paper , scissors")
   }
-  return userchoice
+  return userChoice
 }
 
 function oneRound (){
- const computerChoice = computerChoice();
- const userchoice = userchoice();
+ const computerChoice = getComputerChoice();
+ const userChoice = getPlayerChoice();
 
   if (userChoice === "rock" && computerChoice === "paper") {
     console.log("Paper beats rock. You lose.");
@@ -59,15 +59,13 @@ function game() {
   let round;
 
   for (let i = 0; i < 5; i++) {
-    round = playRound();
+    round = oneRound();
     if (round === "user") {
       userPoints++;
     } else if (round === "computer") {
       computerPoints++;
     }
   }
- 
-
 
   if (userPoints > computerPoints) {
     console.log(`You won ${userPoints} to ${computerPoints}!`);
@@ -76,7 +74,6 @@ function game() {
   } else {
     console.log(`It's a draw, ${userPoints} to ${computerPoints}.`);
   }
-  
 }
  
 game();
