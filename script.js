@@ -52,3 +52,31 @@ function oneRound (){
     return "draw";
   }
 }
+
+function game() {
+  let userPoints = 0;
+  let computerPoints = 0;
+  let round;
+
+  for (let i = 0; i < 5; i++) {
+    round = playRound();
+    if (round === "user") {
+      userPoints++;
+    } else if (round === "computer") {
+      computerPoints++;
+    }
+  }
+ 
+
+
+  if (userPoints > computerPoints) {
+    console.log(`You won ${userPoints} to ${computerPoints}!`);
+  } else if (userPoints < computerPoints) {
+    console.log(`You lost ${userPoints} to ${computerPoints}.`);
+  } else {
+    console.log(`It's a draw, ${userPoints} to ${computerPoints}.`);
+  }
+  
+}
+ 
+game();
