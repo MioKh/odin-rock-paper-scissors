@@ -24,3 +24,9 @@ so the pseudo code i have in my mind is something like this
 9 write a simple conditional that checks weather playerPoints are more or less then computerPoints and write a console that also takes userPoints and playerPoints in it to write how much playerPoints and how much are computerPoints and if both are equal write that its a draw
 
 10 run the game function :D and everything should work   " should :D "   I hope
+
+
+Well this is old 
+like very very old its funny how github says i have 1 year but its actually not either i was not learning or learning but not doing anything or just took a break from programming but i am back that is what is important 
+
+so this project was kinda easy its also easy to understand the code is very bad but its not like i know how to make it better 
